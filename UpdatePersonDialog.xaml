@@ -1,0 +1,31 @@
+﻿<Window x:Class="ObserverDemo.UpdatePersonDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ObserverDemo"
+        mc:Ignorable="d"
+        Title="Обновить информацию о персоне" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Имя:"/>
+        <TextBox x:Name="NameInput" Grid.Row="0" Grid.Column="1"/>
+        <Button Content="Обновить" 
+                Grid.Row="1" 
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                VerticalAlignment="Center" 
+                HorizontalAlignment="Center" 
+                Click="UpdateButtonOnClick"
+                />
+    </Grid>
+</Window>
