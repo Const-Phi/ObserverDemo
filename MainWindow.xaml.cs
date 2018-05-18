@@ -31,9 +31,7 @@ namespace ObserverDemo
         private void UpdateButtonOnClick(object sender, RoutedEventArgs e)
         {
             if (PersonsListView.SelectedItem is Person person)
-            {
                 new UpdatePersonDialog().UpdatePerson(person);
-            }
         }
     }
 }
